@@ -1,0 +1,75 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+/* Main css  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* start cursor */
+
+.cursor__wrapper {
+    min-height: 100vh;
+    background: #15151c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cursor click animation start  */
+.cursor {
+    z-index: 9999;
+    position: relative;
+}
+
+.cursor .click-animation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor .click-animation .shape {
+    position: absolute;
+    opacity: 0;
+}
+
+/* circles start  */
+
+.cursor .click-animation .shape.circle.big {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #4fb4f8;
+    border-radius: 50%;
+}
+
+.cursor .click-animation .shape.circle.small {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2ca8fa;
+    border-radius: 50%;
+}
+
+.cursor .click-animation .shape.circle {
+    /* animation: click-animation-circle 3s ease-out infinite; */
+}
+
+@keyframes click-animation-circle {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+/* circles style end  */
+
+/* start Triangles style  */
