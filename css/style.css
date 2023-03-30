@@ -144,3 +144,23 @@
         transform: scale(2) translate(-70px, -30px)
     }
 }
+
+/* end Disc styles  */
+
+/* start home section styles  */
+section {
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 200px;
+}
+
+.home h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* end home section styles  */
