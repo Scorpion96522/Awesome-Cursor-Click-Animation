@@ -51,7 +51,7 @@
     border-radius: 50%;
 }
 
-.cursor .click-animation .shape.circle {
+.cursor.active .click-animation .shape.circle {
     animation: click-animation-circle 3s ease-out infinite;
 }
 
@@ -74,6 +74,10 @@
     border-style: solid;
     border-width: 0 5px 10px 5px;
     border-color: transparent transparent #f9de2d transparent; 
+    
+}
+
+.cursor.active .click-animation .shape.triangle.yellow {
     animation: click-animation-triangle-yellow 3s ease-out infinite;
 }
 
@@ -94,6 +98,10 @@
     border-style: solid;
     border-width: 0 3.5px 7px 3.5px;
     border-color: transparent transparent #47eda0 transparent; 
+    
+}
+
+.cursor.active .click-animation .shape.triangle.green {
     animation: click-animation-triangle-green 3s ease-out infinite;
 }
 
@@ -118,6 +126,9 @@
     height: 8.5px;
     background: #d563f8;
     border-radius: 50%;
+}
+
+.cursor.active .click-animation .shape.disc {
     animation: click-animation-disc 3s ease-out infinite;
 }
 
