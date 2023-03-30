@@ -1,0 +1,1 @@
+// java script for animate the cursor on mouse click 
